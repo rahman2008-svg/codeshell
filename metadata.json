@@ -1,0 +1,6 @@
+{
+  "name": "CodeShell",
+  "description": "A powerful, beautifully designed terminal emulator and local shell environment inspired by Termux, featuring an interactive scrollable terminal keys bar, configurable visual themes, multiple terminal sessions, a stateful local/mock packages system, and an advanced Gemini AI Terminal Copilot.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
