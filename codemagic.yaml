@@ -1,0 +1,23 @@
+workflows:
+  android-release:
+    name: Android Release Build
+
+    environment:
+      vars:
+        PACKAGE_NAME: "com.example"
+      java: 17
+
+    scripts:
+      - name: Grant execute permission
+        script: chmod +x gradlew
+
+      - name: Build APK
+        script: ./gradlew assembleDebug
+
+    artifacts:
+      - app/build/outputs/**/*.apk
+
+    publishing:
+      email:
+        recipients:
+          - your@email.com
